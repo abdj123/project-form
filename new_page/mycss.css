@@ -1,0 +1,87 @@
+/* CSS */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7e4df;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  padding: 100px;
+  flex: 1;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #e74c3c;
+  margin-bottom: 20px;
+  font: 400 74.2px "Oldenburg", sans-serif;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font: 400 36px "Oldenburg", sans-serif;
+}
+.day {
+  font-size: 1.5rem;
+  color: #333;
+  font: 400 36px "Oldenburg", sans-serif;
+}
+
+.cake {
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+  margin-top: 3%;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.left_image,
+.right_image {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+}
+
+.left_image {
+  left: 0;
+}
+
+.right_image {
+  right: 0;
+}
+
+.side-image {
+  position: absolute;
+  width: 180px; /* Adjust the size as needed */
+  transform-origin: bottom center; /* Set the rotation pivot point */
+  bottom: 20px; /* Adjust the position as needed */
+}
+
+.left-image {
+  /* left: calc(50% - 220px); */
+  /* Adjust the position as needed */
+  left: 40%;
+  transform: rotate(-15deg) translateY(30px); /* Rotate and translate left image */
+}
+
+.right-image {
+  /* right: calc(50% - 20px);  */
+  /* Adjust the position as needed */
+  right: 40%;
+  transform: rotate(15deg) translateY(30px); /* Rotate and translate right image */
+}
